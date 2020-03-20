@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/expandableButton_wf_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:drawableRight="@drawable/add_black"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Ethnic Wear"
+                android:textAlignment="textStart" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout_wf_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableButton_wf_1"
+                android:background="@color/colorWhite"
+                app:ael_duration="200"
+                app:ael_interpolator="fastOutLinearIn"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Kurtis &amp; Tops"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_1_tv_1"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Suits"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_1_tv_2"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Saree"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_1_tv_3"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Dresses"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_1_tv_4"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Lehengas"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_1_tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_1_tv_5"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Leggings, Salwar, Plazo &amp; more"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/expandableButton_wf_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout_wf_1"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:drawableRight="@drawable/add_black"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Western Wear"
+                android:textAlignment="textStart" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout_wf_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableButton_wf_2"
+                android:background="@color/colorWhite"
+                app:ael_duration="200"
+                app:ael_interpolator="fastOutLinearIn"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Dresses &amp; Jumpsuits"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_2_tv_1"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Tops, T-Shirts, Shirts &amp; Shrugs"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_2_tv_2"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Jeans, Jeggings &amp; Trousers"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_2_tv_3"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Shorts &amp; Skirts"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_2_tv_4"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Blazers"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_2_tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_2_tv_5"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Sweaters &amp; Jackets"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/expandableButton_wf_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout_wf_2"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:drawableRight="@drawable/add_black"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Footwear"
+                android:textAlignment="textStart" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout_wf_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableButton_wf_3"
+                android:background="@color/colorWhite"
+                app:ael_duration="200"
+                app:ael_interpolator="fastOutLinearIn"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_3_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Casual"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_3_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_3_tv_1"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Heels"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_3_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_3_tv_2"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Flats"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_3_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_3_tv_3"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Sport Shoes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/expandableButton_wf_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout_wf_3"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:drawableRight="@drawable/add_black"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Lingerie"
+                android:textAlignment="textStart" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout_wf_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableButton_wf_4"
+                android:background="@color/colorWhite"
+                app:ael_duration="200"
+                app:ael_interpolator="fastOutLinearIn"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_4_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Bra, Panties &amp; Lingerie Sets"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_4_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_4_tv_1"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Shapewear"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_4_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_4_tv_2"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Sleep Wear"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/el_wf_4_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/el_wf_4_tv_3"
+                    android:paddingLeft="@dimen/ele_padding_left_tv"
+                    android:paddingTop="@dimen/ele_padding_bottom_top_tv"
+                    android:paddingBottom="@dimen/ele_padding_bottom_top_tv"
+                    android:text="Swim Suits"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ele_text_size_tv" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/bt_wf_handbags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout_wf_4"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Handbags, Wallets &amp; Belts"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/bt_wf_jewellery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_wf_handbags"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Jewellery"
+                android:textAlignment="textStart" />
+
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:id="@+id/bt_wf_sunglasses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_wf_jewellery"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Watches &amp; Sunglasses"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/colorWhite"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="15sp">
+
+    <LinearLayout
+        android:id="@+id/whole_ll_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_discount_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_circle"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="25%\noff"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_homeProduct_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_1" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_discounted_price_homeProducts_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="\u20B9 100"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_actual_price_homeProducts_vertical"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="\u20B9 100"
+                android:textSize="12sp" />
+
+            <CheckedTextView
+                android:id="@+id/ctv_wish_homeProducts_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checkMark="@drawable/ic_favorite_border_black_24dp"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text=""
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name_homeProducts_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="A Line Dress"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

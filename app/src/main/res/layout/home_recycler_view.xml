@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:background="@drawable/round_circle_black"
+        android:id="@+id/homeImgCardView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_1" />
+
+
+    <TextView
+        android:id="@+id/tv_categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:text="Men"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+</LinearLayout>

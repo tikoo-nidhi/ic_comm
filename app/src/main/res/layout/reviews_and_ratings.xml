@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_reviewHeading"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Review Heading"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_reviewRating"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorGreen"
+                    android:drawableRight="@drawable/ic_star_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="4.5"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_reviewText"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Review Text"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_reviewerName"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Buyer Name"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_reviewDate"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Review Date"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#BEBBBB" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

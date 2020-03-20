@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/bt_grocery_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="start"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="Fruits &amp; Vegetables"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/bt_grocery_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_grocery_1"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="Dairy Products"
+                android:textAlignment="textStart" />
+
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/bt_grocery_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_grocery_2"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="@dimen/ele_padding_bottom_top_tv"
+                android:paddingRight="@dimen/ele_padding_bottom_top_tv"
+                android:text="Foodgrains, Oils &amp; Masala"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/bt_grocery_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_grocery_3"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="Bakery &amp; Snacks"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack" />
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/bt_grocery_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_grocery_4"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/ele_margin_top_bt"
+                android:background="@color/colorWhite"
+                android:paddingStart="@dimen/ele_padding_left_bt"
+                android:paddingLeft="@dimen/ele_padding_left_bt"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="Cleaning &amp; Household"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

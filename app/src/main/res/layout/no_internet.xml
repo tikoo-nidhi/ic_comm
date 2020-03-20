@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="10dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_no_connectionFound"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No Internet Connection Found"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_no_wifi"
+            android:padding="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_wifi" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_anim"
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="network_searching.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+
+        <TextView
+            android:id="@+id/retry"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Retry"
+            android:textColor="#2873F0"
+            android:textSize="20sp" />
+
+
+
+
+</LinearLayout>

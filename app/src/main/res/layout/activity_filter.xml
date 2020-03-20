@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:clipChildren="false"
+    android:orientation="horizontal"
+    tools:context=".Activity.FilterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:elevation="15dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_cancelFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="match_parent"
+            android:background="@color/colorSeparator" />
+
+        <TextView
+            android:id="@+id/tv_applyFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Apply"
+            android:textColor="@color/colorLogoBlue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="Filters"
+        android:textColor="@color/colorLogoBlue"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_filterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_filterValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/linear_rangeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="7dp"
+                    android:text="Price Range"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_minRange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="7dp"
+                        android:text="\u20B9100"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_maxRange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="7dp"
+                        android:text="\u20B91600"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/rangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:rsb_indicator_arrow_size="10dp"
+                    app:rsb_indicator_height="20dp"
+                    app:rsb_indicator_padding_bottom=".5px"
+                    app:rsb_indicator_padding_left="5dp"
+                    app:rsb_indicator_padding_right="5dp"
+                    app:rsb_indicator_radius="5dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_text_size="15sp"
+                    app:rsb_indicator_width="15dp"
+                    app:rsb_mode="range"
+                    app:rsb_progress_color="@color/colorLogoBlue"
+                    app:rsb_progress_default_color="@color/colorSeparator"
+                    app:rsb_progress_height="5dp"
+                    app:rsb_progress_radius="5dp"
+                    app:rsb_range_interval="0"
+                    app:rsb_thumb_drawable="@drawable/rsb_default_thumb"
+                    app:rsb_thumb_scale_ratio="0"
+                    app:rsb_thumb_size="30dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

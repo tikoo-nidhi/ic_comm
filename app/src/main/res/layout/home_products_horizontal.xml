@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_ll_lay"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_discount_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/round_circle"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="25%\noff"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_homeProduct_horizontal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/wish_5" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:id="@+id/tv_discounted_price_homeProducts_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="\u20B9 100"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_actual_price_homeProducts_horizontal"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="\u20B9 100"
+            android:textSize="12sp" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_wish_homeProducts_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checkMark="@drawable/ic_favorite_border_black_24dp"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text=""
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name_homeProducts_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="5dp"
+        android:text="A Line Dress"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp" />
+
+</LinearLayout>

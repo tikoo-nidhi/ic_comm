@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OrderActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/noConnectionLayout"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="No network Connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_tryAgain"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorLogoBlue"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:elevation="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orders_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

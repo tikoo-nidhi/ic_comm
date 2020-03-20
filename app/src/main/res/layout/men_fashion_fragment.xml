@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/expandableLinearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--    <Button-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:id="@+id/expandableButton_mf_1"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:drawableRight="@drawable/add_black"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Tops"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--        android:id="@+id/expandableLayout_mf_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/expandableButton_mf_1"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        app:ael_duration="200"-->
+<!--        app:ael_interpolator="fastOutLinearIn"-->
+<!--        app:ael_orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_1_tv_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="T-Shirts"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_1_tv_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_1_tv_1"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Casual Shirts"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_1_tv_3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_1_tv_2"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Formal Shirts"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_1_tv_4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_1_tv_3"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Jackets"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_1_tv_5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_1_tv_4"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Sweaters"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+<!--    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--    <Button-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/expandableButton_mf_2"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/expandableLayout_mf_1"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:drawableRight="@drawable/add_black"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Bottoms"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--        android:id="@+id/expandableLayout_mf_2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/expandableButton_mf_2"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        app:ael_duration="200"-->
+<!--        app:ael_interpolator="fastOutLinearIn"-->
+<!--        app:ael_orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_2_tv_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Jeans &amp; Joggers"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_2_tv_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_2_tv_1"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Trousers"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_2_tv_3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_2_tv_2"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Shorts"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_2_tv_4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_2_tv_3"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Pants"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+<!--    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--    <Button-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/bt_mf_sportsWear"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/expandableLayout_mf_2"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Sports Wear"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <Button-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/bt_mf_sleepWear"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bt_mf_sportsWear"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Sleep Wear &amp; Swimsuits"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <Button-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/bt_mf_indianWear"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bt_mf_sleepWear"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Indian Wear"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <Button-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/bt_mf_suits"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bt_mf_sleepWear"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Suits &amp; Blazers"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <Button-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--        android:id="@+id/expandableButton_mf_3"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bt_mf_suits"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:drawableRight="@drawable/add_black"-->
+<!--        android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--        android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--        android:text="Footwear"-->
+<!--        android:textAlignment="textStart" />-->
+
+<!--    <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/expandableLayout_mf_3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/expandableButton_mf_3"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        app:ael_duration="200"-->
+<!--        app:ael_interpolator="fastOutLinearIn"-->
+<!--        app:ael_orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_3_tv_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Casual"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_3_tv_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_3_tv_1"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Formal"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_3_tv_3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_3_tv_2"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Sports"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:id="@+id/el_mf_3_tv_4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/el_mf_3_tv_3"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_tv"-->
+<!--            android:paddingTop="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingBottom="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Sandals"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:textSize="@dimen/ele_text_size_tv" />-->
+<!--    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+<!--        <Button-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--            android:id="@+id/bt_mf_watches"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/bt_mf_sleepWear"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--            android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Watches"-->
+<!--            android:textAlignment="textStart" />-->
+<!--        <Button-->
+<!--            android:visibility="gone"-->
+<!--            android:fontFamily="@font/montserrat"-->
+<!--            android:layout_marginTop="@dimen/ele_margin_top_bt"-->
+<!--            android:id="@+id/bt_mf_sunglasses"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/bt_mf_watches"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:paddingStart="@dimen/ele_padding_left_bt"-->
+<!--            android:paddingLeft="@dimen/ele_padding_left_bt"-->
+<!--            android:paddingEnd="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:paddingRight="@dimen/ele_padding_bottom_top_tv"-->
+<!--            android:text="Sunglasses"-->
+<!--            android:textAlignment="textStart" />-->
+<!--    </LinearLayout>-->
+<!--    </ScrollView>-->
+
+</LinearLayout>

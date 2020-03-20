@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wholeLay"
+        android:background="@color/colorWhite"
+        android:padding="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:padding="7dp"
+            android:textSize="18sp"
+            android:text="Grey"
+            android:id="@+id/cb_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_color"
+            android:layout_margin="5dp"
+            android:background="@color/colorSeparator"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_filterSelected"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:padding="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grey"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_filterItems"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/colorSeparator"/>
+
+</LinearLayout>

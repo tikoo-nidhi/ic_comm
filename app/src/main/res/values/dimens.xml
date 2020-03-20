@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Electronics Fragment-->
+    <dimen name="ele_text_size_tv">15sp</dimen>
+    <dimen name="ele_margin_top_bt">5dp</dimen>
+    <dimen name="ele_padding_left_bt">20dp</dimen>
+    <dimen name="ele_padding_left_tv">100dp</dimen>
+    <dimen name="ele_padding_bottom_top_tv">10dp</dimen>
+
+
+</resources>
